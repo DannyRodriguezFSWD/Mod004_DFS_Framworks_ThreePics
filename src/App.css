@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,10 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+.icon {width: 1em;}
+
+.postStattus {position: relative; height: 2em;}
+.postDate {position: absolute; left: 0;}
+.postLike {position: absolute; right: 0;}
