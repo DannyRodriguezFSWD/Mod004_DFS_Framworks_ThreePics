@@ -1,32 +1,37 @@
+import { useState,useEffect } from "react";
+import { getPosts } from "../service/data-service";
 import Post from "./Post";
 
-const posts = [
-    {
-      img: "https://via.placeholder.com/300x250?text=300x250+MPU",
-      user: "@Dan",
-      description: "Example of comment for have some text",
-      postDate: "3 days ago",
-      likes: 25,
-      comments: [],
-    },
-  ];
-  
-  function PostList() {
+const initialState = [];
+
+function PostList({searchI,shwL}) {
+    const [posts, setPosts] = useState(initialState);
+    
+    useEffect(() =>{
+        getPosts().then((posts) =>{
+            setPosts(posts);
+        });
+    }, []);    
+   
     return (
-      <div className="d-flex p-1">
-        {posts.map((post, i) => (
-          <Post
-            key={i}
-            img={post.img}
-            user={post.user}
-            description={post.description}
-            postDate = {post.postDate}
-            likes={post.likes}
-            comments={post.comments}
-          />
+        <div className={shwL===true ? "p-1 show": "p-1 hide"}>
+        {posts === initialState 
+        ? "Loading..." 
+        : posts
+        .filter((e) => e.description.includes(searchI))
+        .map((post, i) => (
+                <Post
+                key={i}
+                image={post.image}
+                autor={post.autor}
+                description={post.description}
+                createdAt = {post.createdAt}
+                likes={post.likes}
+                comments={post.comments}
+                />
         ))}
-      </div>
+        </div>
     );
-  }
-  
-  export default PostList;
+}
+
+export default PostList;

@@ -1,11 +1,18 @@
-
-function Search() {
+function Search({searchI,dSearch}) {
+   
     return (
 
         <div className="container-fluid">
             <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                
+                <input 
+                value={searchI} 
+                onChange={(e) => {
+                    dSearch(e.target.value);
+                }} 
+                className="form-control me-2" 
+                type="search" 
+                placeholder="Search"
+                />                
             </form>
         </div>
         );

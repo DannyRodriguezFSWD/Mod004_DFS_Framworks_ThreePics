@@ -39,6 +39,14 @@
 
 .icon {width: 1em;}
 
-.postStattus {position: relative; height: 2em;}
+.postStatus {position: relative; min-height: 2em;}
 .postDate {position: absolute; left: 0;}
 .postLike {position: absolute; right: 0;}
+
+.card-text {min-height: 5rem;}
+.cmmts {position: absolute; bottom: 0;}
+
+#profile {align-items: center; text-align: center; justify-content: center; height: 70vh; display: flex; flex-direction: column;}
+#PostL {display: flex;}
+.show {display: flex}
+.hide {display: none;}

@@ -1,0 +1,33 @@
+{
+    "posts": [
+        {
+            "createdAt": "2022-04-11",
+            "autor": "Dan",
+            "description": "accusamus beatae ad facilis cum similique qui sunt",
+            "likes": 11,
+            "comments": 10,
+            "image": "https://via.placeholder.com/600/92c952"
+        },{
+            "createdAt": "3 days ago",            
+            "autor": "Charly",
+            "description": "reprehenderit est deserunt velit ipsam",            
+            "likes": 25,
+            "comments": 15,
+            "image": "https://via.placeholder.com/600/771796"
+          },{
+            "createdAt": "3 days ago",            
+            "autor": "Max",
+            "description": "officia porro iure quia iusto qui ipsa ut modi",            
+            "likes": 2,
+            "comments": 1,
+            "image": "https://via.placeholder.com/600/24f355"
+          },{
+            "createdAt": "3 days ago",            
+            "autor": "Ali",
+            "description": "reprehenderit est deserunt velit ipsam",            
+            "likes": 5,
+            "comments": 6,
+            "image": "https://via.placeholder.com/600/d32776"
+          }
+    ]
+}
