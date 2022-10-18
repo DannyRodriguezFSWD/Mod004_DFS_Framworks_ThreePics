@@ -14,7 +14,7 @@ function PostList({searchI,shwL}) {
     }, []);    
    
     return (
-        <div className={shwL===true ? "p-1 show": "p-1 hide"}>
+        <div className={shwL===true ? "p-1 d-flex flex-wrap justify-content-center": "hide"}>
         {posts === initialState 
         ? "Loading..." 
         : posts

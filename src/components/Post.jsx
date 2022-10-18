@@ -5,7 +5,7 @@ import msn from '../assets/icons/message.svg';
 function Post({ autor, image, description,likes,createdAt,comments }) {
     const [like, setLike] = useState(likes)
     return (
-      <div className="card m-1 hiden" style={{ width: "100%", maxWidth: "23em" }}>
+      <div className="card m-1 flex-lg-fill flex-sm-fill" style={{maxWidth: "20em" }}>
         <img src={image} className="card-img-top" alt="..." />
         <div className="card-body">
             <div className="d-flex container-fluid postStatus">

@@ -3,13 +3,13 @@ function Search({searchI,dSearch}) {
     return (
 
         <div className="container-fluid">
-            <form className="d-flex" role="search">
+            <form className="d-flex flex-wrap justify-content-center" role="search">
                 <input 
                 value={searchI} 
                 onChange={(e) => {
                     dSearch(e.target.value);
                 }} 
-                className="form-control me-2" 
+                className="form-control" 
                 type="search" 
                 placeholder="Search"
                 />                
