@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import { useState } from "react";
 import './App.css';
+import Login from "./components/Login";
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import Profile from './components/Profile';
@@ -8,15 +9,14 @@ import PostList from './components/PostList';
 
 function App() {
   const [searchI, setSearchI] = useState("")
+  const [shwP, setShwP] = useState(false)
+  const [shwL, setShwL] = useState(true)
+  
+  const [token, setToken] = useState(localStorage.getItem("token"));
 
   function dSearch(text) {
     setSearchI(text)    
   }
-
-  const [shwP, setShwP] = useState(false)
-  const [shwL, setShwL] = useState(true)
-  
-
 
   function onLogoClick(e){
     setShwL(e)
@@ -31,10 +31,18 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar shwP={shwP} shwL={shwL} onProfileClick={onProfileClick}  onLogoClick={onLogoClick}/>
-      <SearchBar searchI={searchI} dSearch={dSearch}/>
-      <Profile shwP={shwP} shwL={shwL} />
-      <PostList searchI={searchI} shwP={shwP} shwL={shwL}/>
+      
+        {token ? (
+          <>
+            <NavBar shwP={shwP} shwL={shwL} onProfileClick={onProfileClick}  onLogoClick={onLogoClick}/>
+            <SearchBar searchI={searchI} dSearch={dSearch}/>
+            <Profile shwP={shwP} shwL={shwL} />
+            <PostList searchI={searchI} shwP={shwP} shwL={shwL}/>
+          </>
+        ) : (
+          <Login setToken={setToken} />
+        )}
+     
     </div>
   );
 }
