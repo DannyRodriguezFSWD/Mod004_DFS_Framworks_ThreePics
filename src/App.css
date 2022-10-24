@@ -50,3 +50,5 @@
 #PostL {display: flex;}
 .show {display: flex}
 .hide {display: none;}
+
+.btn-logout { position: absolute; top: 4em; right: 2em;}

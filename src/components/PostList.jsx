@@ -4,7 +4,7 @@ import Post from "./Post";
 
 const initialState = [];
 
-function PostList({searchI,shwL}) {
+function PostList({searchI}) {
     const [posts, setPosts] = useState(initialState);
     
     useEffect(() =>{
@@ -14,7 +14,7 @@ function PostList({searchI,shwL}) {
     }, []);    
    
     return (
-        <div className={shwL===true ? "p-1 d-flex flex-wrap justify-content-center": "hide"}>
+        <div className="p-1 d-flex flex-wrap justify-content-center">
         {posts === initialState 
         ? "Loading..." 
         : posts
@@ -23,9 +23,9 @@ function PostList({searchI,shwL}) {
                 <Post
                 key={i}
                 image={post.image}
-                autor={post.autor}
-                description={post.description}
-                createdAt = {post.createdAt}
+                autor={post.author}
+                text={post.text}
+                createdAt = {post.updatedAt}
                 likes={post.likes}
                 comments={post.comments}
                 />

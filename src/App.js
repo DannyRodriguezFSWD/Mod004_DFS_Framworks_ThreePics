@@ -3,45 +3,44 @@ import { useState } from "react";
 import './App.css';
 import Login from "./components/Login";
 import NavBar from './components/NavBar';
-import SearchBar from './components/SearchBar';
 import Profile from './components/Profile';
-import PostList from './components/PostList';
+import { Routes, Route } from "react-router";
+import Home from "./screens/Home";
 
 function App() {
-  const [searchI, setSearchI] = useState("")
-  const [shwP, setShwP] = useState(false)
-  const [shwL, setShwL] = useState(true)
-  
+  const [searchI, setSearchI] = useState("")   
   const [token, setToken] = useState(localStorage.getItem("token"));
+  const [isLoggedin, setIsLogggedin] =useState(false);
 
   function dSearch(text) {
     setSearchI(text)    
   }
 
-  function onLogoClick(e){
-    setShwL(e)
-    setShwP(false)
-  }
-
-  function onProfileClick(e){
-    setShwP(e)
-    setShwL(false)
-  }
-
-
   return (
     <div className="App">
-      
-        {token ? (
-          <>
-            <NavBar shwP={shwP} shwL={shwL} onProfileClick={onProfileClick}  onLogoClick={onLogoClick}/>
-            <SearchBar searchI={searchI} dSearch={dSearch}/>
-            <Profile shwP={shwP} shwL={shwL} />
-            <PostList searchI={searchI} shwP={shwP} shwL={shwL}/>
-          </>
-        ) : (
-          <Login setToken={setToken} />
-        )}
+      <NavBar/>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={token ? (
+            <>            
+              <Home 
+                searchI={searchI} 
+                dSearch={dSearch}                
+              />
+         </>
+          ) : (
+            <Login setToken={setToken} />
+          )} />
+          <Route path="/login" element={<Login setToken={setToken} />} />
+          <Route path="/profile" element={token ? (
+            <>            
+              <Profile />            
+            </>
+          ) : (
+            <Login setToken={setToken} />
+          )} />
+        </Routes>
+      </div>       
      
     </div>
   );

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { onLoginComplete } from "../service/data-service";
-import ThunderIcon from '../assets/icons/thunder.svg';
 
 function Login({ setToken }) {
   const [error, setError] = useState();
@@ -20,14 +19,7 @@ function Login({ setToken }) {
   }
 
   return (
-    <div>
-        <nav className="navbar bg-light mb-2">
-        <div className="container-fluid">
-          
-            <span className="navbar-brand mb-0 h1"><img className="icon" src={ThunderIcon} alt="" /> Three pics</span>
-                
-        </div>
-      </nav>
+    <div>        
       <div  className="container text-center">
             {error && <div className="alert alert-danger">{error}</div>}
             <form onSubmit={handleSubmit}>
