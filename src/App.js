@@ -10,7 +10,7 @@ import Home from "./screens/Home";
 function App() {
   const [searchI, setSearchI] = useState("")   
   const [token, setToken] = useState(localStorage.getItem("token"));
-  const [isLoggedin, setIsLogggedin] =useState(false);
+  //const [isLoggedin, setIsLogggedin] =useState(false);
 
   function dSearch(text) {
     setSearchI(text)    

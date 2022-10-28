@@ -1,4 +1,4 @@
-import data from "../data/posts.json"
+//import data from "../data/posts.json"
 import userData from "../data/users.json"
 import axios from "axios";
 
@@ -23,7 +23,7 @@ export function getPosts() {
       .get("https://three-points.herokuapp.com/api/posts", {
         headers: { authorization: `Bearer ${localStorage.getItem("token")}` },
       })
-      .then((response) => response.data);
+      .then((response) => response.data);      
   }
  
   export function onLoginComplete(username, password) {

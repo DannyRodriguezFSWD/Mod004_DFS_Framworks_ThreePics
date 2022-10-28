@@ -18,18 +18,19 @@ function PostList({searchI}) {
         {posts === initialState 
         ? "Loading..." 
         : posts
-        .filter((e) => e.description.includes(searchI))
-        .map((post, i) => (
+            .filter((e) => e.text.includes(searchI))
+            .map((post, i) => (
                 <Post
-                key={i}
-                image={post.image}
-                autor={post.author}
-                text={post.text}
-                createdAt = {post.updatedAt}
-                likes={post.likes}
-                comments={post.comments}
+                    key={i}
+                    id={post.id}
+                    image={post.image}
+                    author={post.author.username}
+                    text={post.text}
+                    updatedAt = {post.updatedAt}
+                    likes={post.likes}
+                    comments={post.comments.length}
                 />
-        ))}
+            ))}
         </div>
     );
 }
