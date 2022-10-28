@@ -1,6 +1,6 @@
 {
   "name": "three_pics",
-  "homepage": "https://dannyrodriguezfswd.github.io/Mod004_DFS_Framworks_ThreePics/",
+  "homepage": "https://dannyrodriguezfswd.github.io/Mod004_DFS_Framworks_ThreePics/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
