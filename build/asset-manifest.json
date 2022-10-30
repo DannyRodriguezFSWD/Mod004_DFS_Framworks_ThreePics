@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Mod004_DFS_Framworks_ThreePics/build/static/css/main.a07002b1.css",
-    "main.js": "/Mod004_DFS_Framworks_ThreePics/build/static/js/main.ede88b76.js",
-    "static/js/787.bd03ebe4.chunk.js": "/Mod004_DFS_Framworks_ThreePics/build/static/js/787.bd03ebe4.chunk.js",
-    "index.html": "/Mod004_DFS_Framworks_ThreePics/build/index.html",
-    "static/media/message.svg": "/Mod004_DFS_Framworks_ThreePics/build/static/media/message.46a1a60bb17f7e83f1ad11df9ddfd67f.svg",
-    "static/media/w-heart.svg": "/Mod004_DFS_Framworks_ThreePics/build/static/media/w-heart.ebb91d22d7c70715c8622ceeebd09e5e.svg",
-    "static/media/user-circle.svg": "/Mod004_DFS_Framworks_ThreePics/build/static/media/user-circle.aa6ae7f6c5f198f3663af0333fd40e80.svg",
-    "static/media/thunder.svg": "/Mod004_DFS_Framworks_ThreePics/build/static/media/thunder.4f7962c22923dc997669a8ba3a56027f.svg",
-    "main.a07002b1.css.map": "/Mod004_DFS_Framworks_ThreePics/build/static/css/main.a07002b1.css.map",
-    "main.ede88b76.js.map": "/Mod004_DFS_Framworks_ThreePics/build/static/js/main.ede88b76.js.map",
-    "787.bd03ebe4.chunk.js.map": "/Mod004_DFS_Framworks_ThreePics/build/static/js/787.bd03ebe4.chunk.js.map"
+    "main.css": "/Mod004_DFS_Framworks_ThreePics/static/css/main.a07002b1.css",
+    "main.js": "/Mod004_DFS_Framworks_ThreePics/static/js/main.76753d13.js",
+    "static/js/787.bd03ebe4.chunk.js": "/Mod004_DFS_Framworks_ThreePics/static/js/787.bd03ebe4.chunk.js",
+    "index.html": "/Mod004_DFS_Framworks_ThreePics/index.html",
+    "static/media/message.svg": "/Mod004_DFS_Framworks_ThreePics/static/media/message.46a1a60bb17f7e83f1ad11df9ddfd67f.svg",
+    "static/media/w-heart.svg": "/Mod004_DFS_Framworks_ThreePics/static/media/w-heart.ebb91d22d7c70715c8622ceeebd09e5e.svg",
+    "static/media/user-circle.svg": "/Mod004_DFS_Framworks_ThreePics/static/media/user-circle.aa6ae7f6c5f198f3663af0333fd40e80.svg",
+    "static/media/thunder.svg": "/Mod004_DFS_Framworks_ThreePics/static/media/thunder.4f7962c22923dc997669a8ba3a56027f.svg",
+    "main.a07002b1.css.map": "/Mod004_DFS_Framworks_ThreePics/static/css/main.a07002b1.css.map",
+    "main.76753d13.js.map": "/Mod004_DFS_Framworks_ThreePics/static/js/main.76753d13.js.map",
+    "787.bd03ebe4.chunk.js.map": "/Mod004_DFS_Framworks_ThreePics/static/js/787.bd03ebe4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a07002b1.css",
-    "static/js/main.ede88b76.js"
+    "static/js/main.76753d13.js"
   ]
 }
